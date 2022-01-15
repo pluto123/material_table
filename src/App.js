@@ -66,6 +66,7 @@ function App() {
         columns={columns}
         data={tableData}
         title="Student Information"
+        options={{sorting: false}}
       />
     </div>
   );
