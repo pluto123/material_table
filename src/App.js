@@ -89,7 +89,7 @@ function App() {
         editable={{
           onRowAdd: (newRow)=>new Promise((resolve, reject)=>{
             setTableData([...tableData, newRow])
-            resolve()
+            setTimeout(()=>resolve(), 1000)
           })
         }}
       />
