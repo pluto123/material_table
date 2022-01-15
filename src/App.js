@@ -70,7 +70,8 @@ function App() {
           sorting: true, 
           search: true,
           //searchText: "steven",
-          searchFieldAlignment: "left"
+          //searchFieldAlignment: "left",
+          searchAutoFocus: true,
         }}
       />
     </div>
