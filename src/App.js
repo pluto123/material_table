@@ -90,6 +90,10 @@ function App() {
           onRowAdd: (newRow)=>new Promise((resolve, reject)=>{
             setTableData([...tableData, newRow])
             setTimeout(()=>resolve(), 1000)
+          }),
+          onRowUpdate: (newRow, oldRow)=>new Promise((resolve, reject)=>{
+            console.log(newRow, oldRow)
+            setTimeout(()=>resolve(), 1000)
           })
         }}
       />
