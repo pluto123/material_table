@@ -38,7 +38,7 @@ const tableIcons = {
 
 function App() {
   const [tableData, setTableData] = useState([
-    { name: "Steven", email: "steven@gmail.com", phone: "0920765432", age: 45, gender: "M", city: "Taipei", fee: 46352 },
+    { name: "Steven", email: "steven@gmail.com", phone: "0920765432", age: null, gender: "M", city: "Taipei", fee: 46352 },
     { name: "Eric", email: "eric@gmail.com", phone: "0921123456", age: 14, gender: "M", city: "Taiwan", fee: 47625 },
     { name: "Oscar", email: "oscar@gmail.com", phone: "0922567893", age: 11, gender: "M", city: "Japan", fee: 48712 },
     { name: "Amy", email: "amy@gmail.com", phone: "0931679356", age: 45, gender: "F", city: "USA", fee: 46793 }
@@ -53,7 +53,7 @@ function App() {
     { title: "Name", field: "name" },
     { title: "Email", field: "email" },
     { title: "Phone Number", field: "phone", align: 'right' }, // align: [right | center | left]
-    { title: "Age", field: "age" },
+    { title: "Age", field: "age", emptyValue: ()=><em>null</em>},
     { title: "Gender", field: "gender", lookup: genderLookup },
     { title: "City", field: "city" },
     { title: "School Fee", field: "fee" }
