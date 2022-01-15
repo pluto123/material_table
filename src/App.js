@@ -89,10 +89,14 @@ function App() {
         editable={{
           onRowAdd: (newRow)=>new Promise((resolve, reject)=>{
             setTableData([...tableData, newRow])
+            //console.log(newRow)
             setTimeout(()=>resolve(), 1000)
           }),
           onRowUpdate: (newRow, oldRow)=>new Promise((resolve, reject)=>{
-            console.log(newRow, oldRow)
+            const updateData = [...tableData]
+            updateData[oldRow.tableData.id] = newRow
+            setTableData(updateData)
+            //console.log(newRow, oldRow)
             setTimeout(()=>resolve(), 1000)
           })
         }}
