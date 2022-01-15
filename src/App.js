@@ -71,7 +71,8 @@ function App() {
           search: true,
           //searchText: "steven",
           //searchFieldAlignment: "left",
-          searchAutoFocus: true,
+          //searchAutoFocus: true,
+          searchFieldVariant: "outlined" // searchFieldVariant: [standard | filled | outlined]
         }}
       />
     </div>
