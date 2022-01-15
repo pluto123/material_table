@@ -81,7 +81,8 @@ function App() {
           showFirstLastPageButtons: true,
           paginationPosition: "bottom", // paginationPosition: [top | bottom | both]
           exportButton: true,
-          exportAllData: true
+          exportAllData: true,
+          exportFileName: "MyTableData"
         }}
       />
     </div>
