@@ -50,7 +50,7 @@ function App() {
   }
 
   const columns = [
-    { title: "Name", field: "name" },
+    { title: "Name", field: "name", sorting: false },
     { title: "Email", field: "email" },
     { title: "Phone Number", field: "phone", align: 'right' }, // align: [right | center | left]
     { title: "Age", field: "age", emptyValue: ()=><em>null</em>},
@@ -66,7 +66,7 @@ function App() {
         columns={columns}
         data={tableData}
         title="Student Information"
-        options={{sorting: false}}
+        options={{sorting: true}}
       />
     </div>
   );
