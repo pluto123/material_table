@@ -76,7 +76,8 @@ function App() {
           filtering: true,
           paging: true,
           pageSizeOptions: [5, 10, 20, 25, 50, 100],
-          pageSize: 2
+          pageSize: 2,
+          paginationType: "stepped", //paginationType: [normal | stepped]
         }}
       />
     </div>
