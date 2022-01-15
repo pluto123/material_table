@@ -44,12 +44,17 @@ function App() {
     { name: "Amy", email: "amy@gmail.com", phone: "0931679356", age: 45, gender: "F", city: "USA", fee: 46793 }
   ])
 
+  const genderLookup = { 
+    M: "Male", 
+    F: "Female"
+  }
+
   const columns = [
     { title: "Name", field: "name" },
     { title: "Email", field: "email" },
     { title: "Phone Number", field: "phone", align: 'right' }, // align: [right | center | left]
     { title: "Age", field: "age" },
-    { title: "Gender", field: "gender" },
+    { title: "Gender", field: "gender", lookup: genderLookup },
     { title: "City", field: "city" },
     { title: "School Fee", field: "fee" }
   ]
