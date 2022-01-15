@@ -82,7 +82,8 @@ function App() {
           paginationPosition: "bottom", // paginationPosition: [top | bottom | both]
           exportButton: true,
           exportAllData: true,
-          exportFileName: "MyTableData"
+          exportFileName: "MyTableData",
+          addRowPosition: "first"
         }}
         editable={{
           onRowAdd: ()=>new Promise((resolve, reject)=>{
