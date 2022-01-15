@@ -83,7 +83,8 @@ function App() {
           exportButton: true,
           exportAllData: true,
           exportFileName: "MyTableData",
-          addRowPosition: "first"
+          addRowPosition: "first", // addRowPosition: [first | last]
+          actionsColumnIndex: -1
         }}
         editable={{
           onRowAdd: ()=>new Promise((resolve, reject)=>{
