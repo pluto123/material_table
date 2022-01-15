@@ -79,7 +79,8 @@ function App() {
           pageSize: 2,
           paginationType: "stepped", // paginationType: [normal | stepped]
           showFirstLastPageButtons: true,
-          paginationPosition: "top", // paginationPosition: [top | bottom | both]
+          paginationPosition: "bottom", // paginationPosition: [top | bottom | both]
+          exportButton: true
         }}
       />
     </div>
