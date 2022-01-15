@@ -47,7 +47,7 @@ function App() {
   const columns = [
     { title: "Name", field: "name" },
     { title: "Email", field: "email" },
-    { title: "Phone Number", field: "phone" },
+    { title: "Phone Number", field: "phone", align: 'right' }, // align: [right | center | left]
     { title: "Age", field: "age" },
     { title: "Gender", field: "gender" },
     { title: "City", field: "city" },
