@@ -73,7 +73,9 @@ function App() {
           //searchFieldAlignment: "left",
           //searchAutoFocus: true,
           //searchFieldVariant: "outlined", // searchFieldVariant: [standard | filled | outlined]
-          filtering: true
+          filtering: true,
+          paging: true,
+          pageSizeOptions:[5, 10, 20, 25, 50, 100]
         }}
       />
     </div>
