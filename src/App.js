@@ -56,7 +56,7 @@ function App() {
     { title: "Age", field: "age", emptyValue: ()=><em>null</em>},
     { title: "Gender", field: "gender", lookup: genderLookup },
     { title: "City", field: "city" },
-    { title: "School Fee", field: "fee", type: "currency" }
+    { title: "School Fee", field: "fee", type: "currency", currencySetting: { currencyCode: "TWD" } }
   ]
 
   return (
