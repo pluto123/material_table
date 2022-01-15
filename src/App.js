@@ -75,7 +75,8 @@ function App() {
           //searchFieldVariant: "outlined", // searchFieldVariant: [standard | filled | outlined]
           filtering: true,
           paging: true,
-          pageSizeOptions:[5, 10, 20, 25, 50, 100]
+          pageSizeOptions: [5, 10, 20, 25, 50, 100],
+          pageSize: 2
         }}
       />
     </div>
