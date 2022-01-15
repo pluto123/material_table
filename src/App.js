@@ -88,7 +88,8 @@ function App() {
         }}
         editable={{
           onRowAdd: (newRow)=>new Promise((resolve, reject)=>{
-            console.log(newRow)
+            setTableData([...tableData, newRow])
+            resolve()
           })
         }}
       />
