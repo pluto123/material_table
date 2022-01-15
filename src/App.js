@@ -84,6 +84,11 @@ function App() {
           exportAllData: true,
           exportFileName: "MyTableData"
         }}
+        editable={{
+          onRowAdd: ()=>new Promise((resolve, reject)=>{
+
+          })
+        }}
       />
     </div>
   );
