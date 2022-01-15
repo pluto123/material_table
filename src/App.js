@@ -68,7 +68,8 @@ function App() {
         title="Student Information"
         options={{
           sorting: true, 
-          search: false
+          search: true,
+          searchText: "steven"
         }}
       />
     </div>
