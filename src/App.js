@@ -69,7 +69,8 @@ function App() {
         options={{
           sorting: true, 
           search: true,
-          //searchText: "steven"
+          //searchText: "steven",
+          searchFieldAlignment: "left"
         }}
       />
     </div>
