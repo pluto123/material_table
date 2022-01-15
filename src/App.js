@@ -77,8 +77,9 @@ function App() {
           paging: true,
           pageSizeOptions: [5, 10, 20, 25, 50, 100],
           pageSize: 2,
-          paginationType: "stepped", //paginationType: [normal | stepped]
-          showFirstLastPageButtons: false
+          paginationType: "stepped", // paginationType: [normal | stepped]
+          showFirstLastPageButtons: true,
+          paginationPosition: "top", // paginationPosition: [top | bottom | both]
         }}
       />
     </div>
