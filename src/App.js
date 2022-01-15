@@ -1,5 +1,5 @@
 import MaterialTable from 'material-table';
-import React, { forwardRef } from 'react';
+import React, { forwardRef, useState } from 'react';
 import AddBox from '@material-ui/icons/AddBox';
 import ArrowDownward from '@material-ui/icons/ArrowDownward';
 import Check from '@material-ui/icons/Check';
@@ -37,6 +37,13 @@ const tableIcons = {
 };
 
 function App() {
+  const [tableData, setTableData] = useState([
+    { name: "Steven", email: "steven@gmail.com", phone: "0920765432", age: 45, gender: "M", city: "Taipei", fee: 46352 },
+    { name: "Eric", email: "eric@gmail.com", phone: "0921123456", age: 14, gender: "M", city: "Taiwan", fee: 47625 },
+    { name: "Oscar", email: "oscar@gmail.com", phone: "0922567893", age: 11, gender: "M", city: "Japan", fee: 48712 },
+    { name: "Amy", email: "amy@gmail.com", phone: "0931679356", age: 45, gender: "F", city: "USA", fee: 46793 }
+  ])
+
   const columns = [
     { title: "Name", field: "name" },
     { title: "Email", field: "email" },
@@ -52,6 +59,8 @@ function App() {
       <MaterialTable 
         icons={tableIcons}
         columns={columns}
+        data={tableData}
+        title="Student Information"
       />
     </div>
   );
