@@ -98,6 +98,13 @@ function App() {
             setTableData(updateData)
             //console.log(newRow, oldRow)
             setTimeout(()=>resolve(), 1000)
+          }),
+          onRowDelete: (selectedRow)=> new Promise((resolve, reject)=>{
+            const updateData = [...tableData]
+            updateData.splice(selectedRow.tableData.id, 1)
+            setTableData(updateData)
+            //console.log(selectedRow)
+            setTimeout(()=>resolve(), 1000)
           })
         }}
       />
