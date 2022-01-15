@@ -66,7 +66,10 @@ function App() {
         columns={columns}
         data={tableData}
         title="Student Information"
-        options={{sorting: true}}
+        options={{
+          sorting: true, 
+          search: false
+        }}
       />
     </div>
   );
