@@ -95,10 +95,15 @@ function App() {
           }),
           grouping: true,
           columnsButton: true,
-          rowStyle: ()=>{
-            return {
-              backgroundColor: "#E9E0FF"
-            }
+          rowStyle: (data, index)=>{
+            if (index%2 == 0)
+              return {
+                backgroundColor: "#E9E0FF"
+              }
+            else
+              return {
+                backgroundColor: null
+              }
           }
         }}
         editable={{
