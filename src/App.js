@@ -92,7 +92,8 @@ function App() {
           selectionProps: rowData=>({
             disabled: rowData.age==null,
             color: "primary"
-          })
+          }),
+          grouping: true
         }}
         editable={{
           onRowAdd: (newRow)=>new Promise((resolve, reject)=>{
