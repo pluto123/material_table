@@ -119,6 +119,7 @@ function App() {
             isFreeAction: false
           }
         ]}
+        onSelectionChange={(selectedRows)=>console.log(selectedRows)}
       />
     </div>
   );
