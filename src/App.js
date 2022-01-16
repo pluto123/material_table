@@ -115,8 +115,8 @@ function App() {
           {
             icon:()=><HomeIcon />,
             tooltip: "Click me",
-            onClick:(event)=>console.log(event),
-            isFreeAction: true
+            onClick:(event, data)=>console.log(data),
+            isFreeAction: false
           }
         ]}
       />
