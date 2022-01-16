@@ -107,6 +107,13 @@ function App() {
             setTimeout(()=>resolve(), 1000)
           })
         }}
+        actions={[
+          {
+            icon:()=><button>Click me</button>,
+            tooltip: "Click me",
+            onClick:(event, data)=>console.log(data)
+          }
+        ]}
       />
     </div>
   );
