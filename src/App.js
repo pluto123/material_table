@@ -87,7 +87,8 @@ function App() {
           addRowPosition: "first", // addRowPosition: [first | last]
           actionsColumnIndex: -1,
           selection: true,
-          showSelectAllCheckbox: false
+          showSelectAllCheckbox: false,
+          showTextRowsSelected: false
         }}
         editable={{
           onRowAdd: (newRow)=>new Promise((resolve, reject)=>{
