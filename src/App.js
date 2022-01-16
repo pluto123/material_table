@@ -54,8 +54,8 @@ function App() {
     { title: "Name", field: "name", sorting: true, customSort: (a, b) => a.name.length - b.name.length, filtering: false },
     { title: "Email", field: "email", filterPlaceholder: "Filter by email" },
     { title: "Phone Number", field: "phone"/*, align: 'right' */}, // align: [right | center | left]
-    { title: "Age", field: "age", emptyValue: ()=><em>null</em>, searchable: false, export: false/*. defaultSort: "asc"*/},
-    { title: "Gender", field: "gender", lookup: genderLookup },
+    { title: "Age", field: "age", defaultGroupOrder:1, emptyValue: ()=><em>null</em>, searchable: false, export: false/*. defaultSort: "asc"*/},
+    { title: "Gender", field: "gender", defaultGroupOrder:0, lookup: genderLookup },
     { title: "City", field: "city" },
     { title: "School Fee", field: "fee", type: "currency", currencySetting: { currencyCode: "TWD", minimumFractionDigits: 1 } }
   ]
