@@ -88,7 +88,11 @@ function App() {
           actionsColumnIndex: -1,
           selection: true,
           showSelectAllCheckbox: false,
-          showTextRowsSelected: false
+          showTextRowsSelected: false,
+          selectionProps: rowData=>({
+            disabled: rowData.age==null,
+            color: "primary"
+          })
         }}
         editable={{
           onRowAdd: (newRow)=>new Promise((resolve, reject)=>{
