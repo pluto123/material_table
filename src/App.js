@@ -51,7 +51,7 @@ function App() {
   }
 
   const columns = [
-    { title: "Name", field: "name", cellStyle: {color: "blue"}, sorting: true, customSort: (a, b) => a.name.length - b.name.length, filtering: false },
+    { title: "Name", field: "name", headerStyle: {color: "#FFFFFF"}, cellStyle: {color: "blue"}, sorting: true, customSort: (a, b) => a.name.length - b.name.length, filtering: false },
     { title: "Email", field: "email", filterPlaceholder: "Filter by email" },
     { title: "Phone Number", field: "phone", grouping: false/*, align: 'right' */}, // align: [right | center | left]
     { title: "Age", field: "age", render: (rowData)=><div style={{background: rowData.age >= 18 ? "green" : "red"}}>{rowData.age>=18 ? "18+" : "18-"}</div>/*, defaultGroupOrder:1*/, emptyValue: ()=><em>null</em>, searchable: false, export: false/*. defaultSort: "asc"*/},
