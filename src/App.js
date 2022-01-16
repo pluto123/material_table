@@ -15,6 +15,7 @@ import Remove from '@material-ui/icons/Remove';
 import SaveAlt from '@material-ui/icons/SaveAlt';
 import Search from '@material-ui/icons/Search';
 import ViewColumn from '@material-ui/icons/ViewColumn';
+import HomeIcon from '@material-ui/icons/Home';
 
 const tableIcons = {
   Add: forwardRef((props, ref) => <AddBox {...props} ref={ref} />),
@@ -109,7 +110,7 @@ function App() {
         }}
         actions={[
           {
-            icon:()=><button>Click me</button>,
+            icon:()=><HomeIcon />,
             tooltip: "Click me",
             onClick:(event)=>console.log(event),
             isFreeAction: true
