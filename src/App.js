@@ -96,7 +96,7 @@ function App() {
           grouping: true,
           columnsButton: true,
           rowStyle: (data, index)=>{
-            if (index%2 == 0)
+            if (index%2 === 0)
               return {
                 backgroundColor: "#E9E0FF"
               }
@@ -104,7 +104,8 @@ function App() {
               return {
                 backgroundColor: null
               }
-          }
+          },
+          headerStyle: {background: "green", fontStyle: "italic"}
         }}
         editable={{
           onRowAdd: (newRow)=>new Promise((resolve, reject)=>{
