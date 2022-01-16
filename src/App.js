@@ -94,7 +94,12 @@ function App() {
             color: "primary"
           }),
           grouping: true,
-          columnsButton: true
+          columnsButton: true,
+          rowStyle: ()=>{
+            return {
+              backgroundColor: "#E9E0FF"
+            }
+          }
         }}
         editable={{
           onRowAdd: (newRow)=>new Promise((resolve, reject)=>{
